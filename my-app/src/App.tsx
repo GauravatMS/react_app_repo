@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { SCRET_FROM_URL,SECRET_FROM_IDENTIFIER,ALT_SECRET } from './constants';
+import { SCRET_FROM_URL,SECRET_FROM_IDENTIFIER,ALT_SECRET,DEMO_ENV } from './constants';
 
 function App() {
   return (
@@ -16,6 +16,9 @@ function App() {
         </p>
         <p>
           Sceret alternate method : {ALT_SECRET}
+        </p>
+        <p>
+          Demo Environment var : {DEMO_ENV}
         </p>
       </header>
     </div>
