@@ -4,8 +4,8 @@
         "azureActiveDirectory": {
           "registration": {
             "openIdIssuer": "https://login.microsoftonline.com/16b3c013-d300-468d-ac64-7eda0820b6d3/v2.0",
-            "clientIdSettingName": "REACT_APP_CLIENT_ID",
-            "clientSecretSettingName": "REACT_APP_CLIENT_SECRET"
+            "clientIdSettingName": "@Microsoft.KeyVault(SecretUri=https://gauravkvrepro.vault.azure.net/secrets/clientID/e838a57f9b18409eb972226648ef4371)",
+            "clientSecretSettingName": "@Microsoft.KeyVault(SecretUri=https://gauravkvrepro.vault.azure.net/secrets/clientSecret/cf48744651474aefa695e7ce3f59d075)"
           }
         }
       }

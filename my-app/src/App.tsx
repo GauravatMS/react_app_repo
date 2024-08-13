@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { SCRET_FROM_URL,SECRET_FROM_IDENTIFIER,ALT_SECRET,DEMO_ENV } from './constants';
+import { SCRET_FROM_URL,SECRET_FROM_IDENTIFIER,ALT_SECRET,DEMO_ENV, CLIENT_ID, CLIENT_SECRET } from './constants';
 import data from './staticwebapp.config.json';
 
 function App() {
@@ -21,8 +21,14 @@ function App() {
         <p>
           Demo Environment var : {DEMO_ENV}
         </p>
+        <p>
+          Client ID of App Reg : {CLIENT_ID}
+        </p>
+        <p>
+          Client secret of App Reg : {CLIENT_SECRET}
+        </p>
         <div>
-      <h1>Config.JSON Data</h1>
+      <h1>staticwebapp.config.json Data</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
       </header>
