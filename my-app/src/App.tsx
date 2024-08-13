@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { SCRET_FROM_URL,SECRET_FROM_IDENTIFIER,ALT_SECRET,DEMO_ENV } from './constants';
+import data from './staticwebapp.config.json';
 
 function App() {
   return (
@@ -20,8 +21,13 @@ function App() {
         <p>
           Demo Environment var : {DEMO_ENV}
         </p>
+        <div>
+      <h1>Config.JSON Data</h1>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </div>
       </header>
     </div>
+    
   );
 }
 
